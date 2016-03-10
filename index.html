@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <title>Makerville Knit</title>
   <meta name="description" content="Makerville Knit is a minimalistic development board to build WiFi enabled things">
-  <meta name="author" content="">
+  <meta name="author" content="Makerville Solutions">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -29,60 +29,84 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-
-</head>
-<body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <div class="section hero">
-    <div class="container">
-      <div class="row">
-        <div class="one-half column">
-          <h4 class="hero-heading">Makerville Knit is a minimalistic development board to build WiFi enabled things.</h4>
-          <!-- <a class="button button-primary" href="">Sign Up</a> -->
-        </div>
-
-
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="//makerville.us12.list-manage.com/subscribe/post?u=064c1b6c971f765e25f2d4c66&amp;id=8d99ecc3e3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<h5>Sign up to receive updates</h5>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address </label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-	<div id="mce-responses" class="clear">
+  </style>
+
+</head>
+<body>
+  
+  <!-- Primary Page Layout
+       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <div class="section hero">
+    <div class="container">
+      <div class="row">
+	
+        <div class="one-half column">
+          <h4 class="hero-heading">Makerville Knit is a breakout board to build WiFi enabled things.</h4>
+          <!-- <a class="button button-primary" href="">Sign Up</a> -->
+	  <h5 id="features">Features</h5>
+	  <p>Based on the Marvell Semiconductor's MW300 WiFi microcontroller</p>
+	  <ul>
+	    <li>32-bit Cortex M4F at 200Mhz</li>
+	    <li>4Mb flash with <a href="https://en.wikipedia.org/wiki/Execute_in_place" target="_blank">XIP</a> support, 512k RAM</li>
+	    <li>802.11 b/g/n with FCC, IC, CE certification</li>
+	    <li>UARTs, JTAG, GPIO, SSP, I2C, GPT, ADC, DAC</li>
+	    <li>Supports open source tools like the GCC ARM toolchain, Eclipse IDE & OpenOCD debugger</li>
+	  </ul>
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+	<p><a href="https://github.com/marvell-iot/aws_starter_sdk/" _target="_blank">SDK</a> which includes -
+	<ul>
+	  <li>FreeRTOS</li>
+	  <li>lwIP</li>
+	  <li>AWS IoT Device SDK</li>
+	</ul>
+      </div>
+      
+      <div class="row">
+	<h5 id="faqs">FAQs</h5>
+	<ul>
+	  <li>What will be the price? <br/> - 999&#8377; / $14.95</li><br/>
+	  <li>Will it be Open Source Hardware? <br/> - The breakout board is module based. As such we won't be able to provide the hardware files for the module itself. We will be open sourcing the design of the breakout board, which incidentally has been developed using KiCad EDA.</li><br/>
+	  <li>When will it be available? <br/> - We will be making them available to buy here in May '16</li><br/>
+	  
+	</ul>
+      </div>
+      <div class="row">
+	<h5 id="signup">Sign up for updates</h5>
+	<div id="mc_embed_signup">
+	  <form action="//makerville.us12.list-manage.com/subscribe/post?u=064c1b6c971f765e25f2d4c66&amp;id=8d99ecc3e3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	    <div id="mc_embed_signup_scroll">
+	      <div class="mc-field-group">
+		<label for="mce-EMAIL">Email Address </label>
+		<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+	      </div>
+	      <div id="mce-responses" class="clear">
 		<div class="response" id="mce-error-response" style="display:none"></div>
 		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div class = "one-half column" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_064c1b6c971f765e25f2d4c66_8d99ecc3e3" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
-
-
-        <!-- <div class="one-half column phones"> -->
-        <!--   <\!-- <img class="phone" src="images/iphone.png"> -\-> -->
-        <!--   <\!-- <img class="phone" src="images/iphone.png"> -\-> -->
-        <!-- </div> -->
+	      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	      <div class = "one-half column" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_064c1b6c971f765e25f2d4c66_8d99ecc3e3" tabindex="-1" value=""></div>
+	      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+	    </div>
+	  </form>
+	</div>
+      </div>
+      <div class="row">
+	<h5>About Makerville</h5>
+	<p>Makerville is a company specialising in building connected hardware coupled with customizable software. Read <a href="http://makerville.io">more</a>.</p>
       </div>
     </div>
   </div>
-
- 
+  
+  
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
