@@ -1533,8 +1533,8 @@
   )
 
   (module graphics:knit (layer B.Cu) (tedit 0) (tstamp 5730F062)
-    (at 136 97 270)
-    (fp_text reference G*** (at 0 0 270) (layer B.SilkS) hide
+    (at 137.25 97.5 270)
+    (fp_text reference G*** (at -0.5 -15 360) (layer B.SilkS) hide
       (effects (font (thickness 0.3)) (justify mirror))
     )
     (fp_text value LOGO (at 0.75 0 270) (layer B.SilkS) hide
