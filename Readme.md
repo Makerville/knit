@@ -43,7 +43,7 @@ Pin Map
 - The header file where all the pin functions are defined is [mw300_pinmux.h](https://github.com/marvell-iot/aws_starter_sdk/blob/master/sdk/src/incl/sdk/drivers/mw300/mw300_pinmux.h)
 
 
-<img src="./img/bb.jpg" width="470"></img>
+<img src="https://makerville.io/knit/img/bb.jpg" width="470"></img>
 
 ```
 No     Fn 0         Fn 1       Fn 2        Fn 3       Fn 4       Fn 5
@@ -124,7 +124,7 @@ Mailing List
       <div id="mce-responses" class="clear">
   <div class="response" id="mce-error-response" style="display:none"></div>
   <div class="response" id="mce-success-response" style="display:none"></div>
-      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      </div>    
       <div class = "one-half column" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_064c1b6c971f765e25f2d4c66_8d99ecc3e3" tabindex="-1" value=""></div>
       <div class="clear"> <br/> &nbsp;<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>
