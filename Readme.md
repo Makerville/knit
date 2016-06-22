@@ -3,36 +3,95 @@ Makerville Knit
 
 [Pre Order >][preorder]
 
-Knit is an industrial grade WiFi development board to build secure applications.
+Knit is an industrial grade WiFi development board to build secure applications. It is based on the <a href="http://www.marvell.com/microcontrollers/88MW300/302/" target="_blank">88MW300</a> SoC from Marvell.
 
-
+Features
+---
 
 * 32-bit Cortex M4F at 200Mhz
-* 512k RAM
+* 512KB SRAM
 * 4MB flash with XIP support
 * 802.11 b/g/n with FCC, IC, CE certification
-* On board USB to serial converter for programming and console
-* Open source development using the GCC ARM toolchain, Eclipse IDE & OpenOCD debugger
+* 1 user LED & 1 user button
 
 The multiplexed peripherals include -
 
-* 2 UARTs
-* 25 GPIOs
-* 2 I2C channels
-* 7 PWM/GPT
-* 2 SSPs
-* 6 ADCs
-* 1 DAC
+|#|Protocol|
+|:-:|:-:|
+| 2| UARTs|
+| 2| I2C channels|
+| 7| PWM/GPT|
+| 2| SSPs|
+| 6| ADCs - 16 bit|
+| 2| Wake up|
+| 1| DAC - 10 bit|
+| 25| GPIOs|
+
+SDK
+---
+
+* MQTT client real time communication with brokers
+* Soft AP for provisioning
+* Secure connections using TLS 1.2
+* FreeRTOS as the underlying real time operating system
+* lwIP TCP/IP stack
+* Supported on Windows, Linux, OS X operating systems
+* More features coming soon !
+
+
+Links to -
+
+* [Source code](https://github.com/marvell-iot/aws_starter_sdk)
+* Documentation
+  * [API](https://marvell-iot.github.io/aws_starter_sdk/)
+  * [Wiki](https://github.com/marvell-iot/aws_starter_sdk/wiki)
+* Support
+  * [Chat](https://gitter.im/marvell-iot/aws_starter_sdk)
+  * [Issues](https://github.com/marvell-iot/aws_starter_sdk/issues)
+
+Development tools
+---
+
+* On board USB to serial converter for programming and console
+* Open source GCC ARM toolchain for development
+* OpenOCD debugging using external dongle
+* Support for Eclipse IDE
+
+
+Documentation
+====
 
 Getting started
 ---------------
 
-- Clone the SDK to your development machine
+### Flashing the device
+Get the SDK on your development machine
+
+ using git
 
 ```
 git clone https://github.com/marvell-iot/aws_starter_sdk
 ```
-- Download the latest blob from the [releases](https://github.com/marvell-iot/aws_starter_sdk/releases) section
+ or https
+
+```
+wget https://github.com/marvell-iot/aws_starter_sdk.git
+```
+Download the latest blob from the [releases](https://github.com/marvell-iot/aws_starter_sdk/releases) section.
+
+[WIP]
+
+### Compiling
+
+Install the required tools as per instructions found [here](https://github.com/marvell-iot/aws_starter_sdk/wiki/Development-Host-Setup)
+
+Next up, download the SDK on your development machine.
+
+From the root directory of the SDK, run
+```
+make APP=sample_apps/aws_starter_demo BOARD_FILE=sdk/src/boards/knit-v1.c
+```
+[WIP]
 
 Pin Map
 ---
@@ -90,23 +149,81 @@ GND
 ```
 - Color coded pinmaps <br/>[Header 1 >](./support/header1.png) [Header 2 >](./support/header2.png)
 
-Products
+
+Power
+---
+
+### Hardware
+
+The Knit board has both 5V and 3.3V power rails. Both, 5V and 3.3V, are made available on the dual pin headers, but **please note that the controller pins are all 3.3V logic.** Supplying any of the pins more than 3.3V will likely result in a bricked board.
+
+The 5V is used by
+
+- LM1117 linear regulator IC - <a href="http://www.ti.com/lit/ds/symlink/lm1117.pdf" target="_blank">Datasheet</a>
+- CP2102 USB to serial converter - <a href="https://www.silabs.com/Support%20Documents/TechnicalDocs/CP2102-9.pdf" target="_blank">Datasheet</a>
+
+The 3.3V is used by
+
+- AW-CU300 WiFi module
+- W25Q32 Winbond Flash - <a href="http://www.elinux.org/images/f/f5/Winbond-w25q32.pdf" target="_blank">Datasheet</a>
+
+
+### Input sources
+
+You can power up your Knit board using one of the following -
+
+- 5V through USB
+- 5V through pins
+- 3.3V through pins (advanced)
+
+### Consumption
+
+Coming soon...
+
+Videos
 ===
 
-These are some of the commercially available products that have been made using the 88MW300 WiFi microcontroller.
+### Create AWS IoT thing and certificates
+In this screen capture, checkout how to create a new IoT thing by signing in to your AWS account.
+
+&nbsp; <iframe width="470" height="315" src="https://www.youtube.com/embed/hOc-iZcmv9E?list=PLIYfgNqDE8r2XNkXMqbaiF0iBbli7cNYz" frameborder="1" allowfullscreen></iframe>
+
+### Provision and push events to AWS IoT
+In this video see how to connect to AWS using the keys that we generated in the previous video and then send a push button event to the AWS IoT device shadow.
+
+&nbsp; <iframe width="470" height="315" src="https://www.youtube.com/embed/CFwY_jNb59s?list=PLIYfgNqDE8r2XNkXMqbaiF0iBbli7cNYz" frameborder="1" allowfullscreen></iframe>
+
+Products w/ 88MW300
+===
+
+The Knit is based on the Marvell 88MW300 WiFi microcontroller. This is an industrial grade SoC which is being used to make all sorts of consumer applications, even battery operated ones.
+
+### Teardowns
+
+Some of the commercially available products that have been made using the 88MW300 WiFi microcontroller-
 <table style="width:100%">
   <tr>
     <td>Hello Barbie</td>
-    <td><a href="http://www.somersetrecon.com/blog/2015/11/20/hello-barbie-security-part-1-teardown">Teardown from Somerset Recon</a></td>
+    <td><a href="http://www.somersetrecon.com/blog/2015/11/20/hello-barbie-security-part-1-teardown" target="_blank">Teardown from Somerset Recon</a></td>
     <td>This one uses the same module as Knit, AW CU300</td>
+    <td>See it in action <a href="https://www.youtube.com/watch?v=RJMvmVCwoNM" target="_blank">here</a></td>
   </tr>
   <tr>
     <td>Xiaomi Yeelight</td>
-    <td><a href="http://www.miui.com/thread-4260673-1-1.html">Teardown from miui.com (in Chinese)</a></td>
+    <td><a href="http://www.miui.com/thread-4260673-1-1.html" target="_blank">Teardown from miui.com (in Chinese)</a></td>
     <td>This one uses a Mi module with 2MB of onboard flash</td>
+    <td>See it in action <a href="https://www.youtube.com/watch?v=x0RCSBAH6gE" target="_blank">here</a></td>
   </tr>
-
 </table>
+
+### Software frameworks
+
+The Knit is capable of running the following frameworks. Please note that one needs to contact Marvell/respective framework provider to get access to the source code and documentation.
+
+- Google Weave
+  - [88MW300 is the first MCU platform to support Google Weave.](http://www.marvell.com/company/news/pressDetail.do?releaseID=7659)
+- Apple's HomeKit.
+  - [HomeKit SDK](http://www.marvell.com/microcontrollers/wi-fi-microcontroller-platform/home-kit/)
 
 Misc
 ====
@@ -118,13 +235,13 @@ Mailing List
     <div id="mc_embed_signup_scroll">
       <div class="mc-field-group">
 
-<p> &nbsp; Email:    </p>
-   &nbsp; <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"><br/>
+<p> &nbsp; &nbsp; Email:    </p>
+   &nbsp; &nbsp; <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"><br/>
       </div>
       <div id="mce-responses" class="clear">
   <div class="response" id="mce-error-response" style="display:none"></div>
   <div class="response" id="mce-success-response" style="display:none"></div>
-      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      </div>   
       <div class = "one-half column" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_064c1b6c971f765e25f2d4c66_8d99ecc3e3" tabindex="-1" value=""></div>
       <div class="clear"> <br/> &nbsp;<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>
@@ -148,15 +265,12 @@ Projects we <3 & use
 - OpenOCD
 - KiCad EDA
 - Eclipse C/C++ IDE
+- Flatdoc site generator by [Rico Sta. Cruz](http://ricostacruz.com/)
 
 Acknowledgements
 ------------
 
 - Logo by [Cassie McKown](https://thenounproject.com/mckowncr/) under [CC by 3.0 US](http://creativecommons.org/licenses/by/3.0/us/)
-- Flatdoc site generator by [Rico Sta. Cruz](http://ricostacruz.com/)
-
-
-
 
 
 [project]: https://github.com/makerville/knit
