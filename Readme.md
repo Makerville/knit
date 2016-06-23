@@ -167,6 +167,10 @@ The 3.3V is used by
 - AW-CU300 WiFi module
 - W25Q32 Winbond Flash
 
+What the above setup allows one to do is power the board using an external 5V when developing an application, and switch to a 3.3V source, like a lithium ion battery, when deploying the application. The voltage regulator and the USB to serial converter is not necessary for normal operation of the WiFi module and flash memory, as long as you have a stable 3.3V power source.  
+
+If you want to save some more power, you can get rid of the power LED resistor. That'll knock off a few mA. Of course, the nice red LED won't show your powered on status once you do this. **Please note that removing a resistor on mounted board has the risk of damaging tracks, etc. if you are not careful. Please avoid doing this if you are not sure.**
+
 ### Input sources
 
 You can power up your Knit board using one of the following -
