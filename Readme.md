@@ -58,6 +58,10 @@ Development tools
 * Support for Eclipse IDE
 
 
+
+All of these can be found on the bottom side of the module, which is visible on the Knit board.
+
+
 Documentation
 ====
 
@@ -211,6 +215,22 @@ We have the following pin headers onboard the Knit -
 |16| GPIO breakout | \m/|
 |16| GPIO breakout | knit|
 |4 | Advanced debugging using [Serial Wire Debug](http://www.arm.com/products/system-ip/debug-trace/coresight-soc-components/serial-wire-debug.php)| SWD|
+
+### Certifications
+The Azurewave module that is being used is certified as follows -
+
+- [FCC ID TLZ-CU300](https://fccid.io/TLZ-CU300)
+- CE
+- IC ID 6100A-CU300
+- NCC ID CCAI15LP1350T2
+
+<img src="./img/knit-module-bottom.jpg" width="470" ></img>
+
+
+### Antenna
+
+The Azurewave module, and hence the Knit board, has a PCB antenna as the internal antenna, and it also has a uFl connector if you would like to get better range with an external antenna.
+
 
 Videos
 ===
