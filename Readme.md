@@ -112,7 +112,7 @@ Pin Map
 |8	|  TMS	      |GPIO8	 | UART2_RTSn  |SSP2_FRM  | I2C0_SCL|   AUPLL_DIGTP2|
 |25 |    XTAL32K_IN  | GPIO25|     I2C1_SDA	|		-|-|-|
 |26  |   XTAL32K_OUT|  GPIO26 |    I2C1_SCL|-|-|-|			
-|23  |  WAKE_UP1|	 GPIO23     |UART0_CTSn|  SFLL_200N|  COMP_IN_P|-|
+|23  |  WAKE_UP1|	 GPIO23     |UART0_CTSn|  -|SFLL_200N|  COMP_IN_P|
 |22  |  WAKE_UP0|	 GPIO22		|-|-|-|		-|
 |GND|GND|GND|GND|GND|GND|GND|					
 |3	 | GPIO3|        GPT0_CH3 |  UART0_RXD   |SSP0_RXD|-|-|		
@@ -126,18 +126,18 @@ Pin Map
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |4|     GPIO4	|GPT0_CH4|      I2C0_SDA|           AUDIO_CLK|	-|-|
 |5|     GPIO5	|GPT0_CH5 |     I2C0_SCL	|		-|-|-|
-|0   |  GPIO0	GPT0_CH0|      UART0_CTSn  |       SSP0_CLK		|-|-|-|
-|1  |   GPIO1	GPT0_CH1|      UART0_RTSn |        SSP0_FRM	|-|-|-|
-|49	|GPIO49  | ADC0_IN7<br/>ACOMP_IN7  |    UART2_RXD |         SSP2_RXD  |          PHY_MON15|-|
-|48	|GPIO48   |ADC0_IN <br/>ACOMP_IN6|      UART2_TXD|          SSP2_TXD|            PHY_MON14|  -|             
-|47	|GPIO47|   ADC0_IN5<br/>ACOMP_IN5|      UART2_RTSn|         SSP2_FRM|            PHY_MON13|-|
-|46	|GPIO46|   ADC0_IN4<br/>ACOMP_IN4|      UART2_CTSn|         SSP2_CLK|            PHY_MON12|-|
+|0   |  GPIO0|	GPT0_CH0|      UART0_CTSn  |       SSP0_CLK		|-|-|
+|1  |   GPIO1	|GPT0_CH1|      UART0_RTSn |        SSP0_FRM	|-|-|
+|49	|GPIO49  | ADC0_IN7<br/>ACOMP_IN7  |    UART2_RXD |         SSP2_RXD  |          -|PHY_MON15|
+|48	|GPIO48   |ADC0_IN <br/>ACOMP_IN6|      UART2_TXD|          SSP2_TXD|            -|PHY_MON14|               
+|47	|GPIO47|   ADC0_IN5<br/>ACOMP_IN5|      UART2_RTSn|         SSP2_FRM|            -|PHY_MON13|
+|46	|GPIO46|   ADC0_IN4<br/>ACOMP_IN4|      UART2_CTSn|         SSP2_CLK|            -|PHY_MON12|
 |GND|GND|GND|GND|GND|GND|GND|												
 |43	|GPIO43 |  ADC0_IN1<br/>ACOMP_IN1|      UART1_RTSn|         SSP1_FRM|            TRACE_DATA1|        PHY_MON9|
 |42	|GPIO42|   ADC0_IN0 <br/>ACOMP_IN0|     UART1_CTSn|         SSP1_CLK|            TRACE_DATA0|        PHY_MON8|
-|41	|GPIO41|   GAU_TRIGGER1  |ACOMP0_EDGE_PULSE|  ACOMP1_EDGE_PULSE|   TRACE_CLKOUT|-|
-|24	|OSC32K|   GPIO24        |UART0_RXD|          GPT1_CH5|            COMP_IN_N|-|
-|39	|GPIO39 |  GPT3_CLKIN   | UART1_RXD|          SSP1_RXD|            RC32M_CLKINb|-|
+|41	|GPIO41|   GAU_TRIGGER1  |ACOMP0_EDGE_PULSE|  ACOMP1_EDGE_PULSE|   -|TRACE_CLKOUT|
+|24	|OSC32K|   GPIO24        |UART0_RXD|          GPT1_CH5|            -|COMP_IN_N|
+|39	|GPIO39 |  GPT3_CLKIN   | UART1_RXD|          SSP1_RXD|            -|RC32M_CLKINb|
 |40	|GPIO40  | GAU_TRIGGER0|  ACOMP0_GPIO_OUT|    ACOMP1_GPIO_OUT|		-|-|
 |3V3|3V3|3V3|3V3|3V3|3V3|3V3|			
 
