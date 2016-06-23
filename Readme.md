@@ -159,14 +159,13 @@ The Knit board has both 5V and 3.3V power rails. Both, 5V and 3.3V, are made ava
 
 The 5V is used by
 
-- LM1117 linear regulator IC - <a href="http://www.ti.com/lit/ds/symlink/lm1117.pdf" target="_blank">Datasheet</a>
-- CP2102 USB to serial converter - <a href="https://www.silabs.com/Support%20Documents/TechnicalDocs/CP2102-9.pdf" target="_blank">Datasheet</a>
+- LM1117 linear regulator IC
+- CP2102 USB to serial converter
 
 The 3.3V is used by
 
 - AW-CU300 WiFi module
-- W25Q32 Winbond Flash - <a href="http://www.elinux.org/images/f/f5/Winbond-w25q32.pdf" target="_blank">Datasheet</a>
-
+- W25Q32 Winbond Flash
 
 ### Input sources
 
@@ -179,6 +178,43 @@ You can power up your Knit board using one of the following -
 ### Consumption
 
 Coming soon...
+
+Hardware
+---
+
+Knit is open source hardware. There are a few definitions of it, but what it means to us is that everything that one would need to make Knit is made available to anyone under a permissive license.
+
+Knit is licensed under the MIT License. You can find text of the license [here](https://github.com/Makerville/knit/blob/master/LICENSE). All the files can be found on our [GitHub](http://github.com/makerville/knit/blob/master/hardware).
+
+
+### Major components
+The Knit board consists of the following major hardware components -
+
+| Function | Company | Part No| Package|Datasheet
+|:-:|:-:|:-:|:-:|
+| WiFi | Azurewave | AW-CU300 | 64 pin LGA|-|
+| Flash | Winbond | W25Q32 | SOIC-8| <a href="http://www.elinux.org/images/f/f5/Winbond-w25q32.pdf" target="_blank">Link</a>
+| USB to UART | Silicon Labs | CP2102| 28 pin QFN | <a href="https://www.silabs.com/Support%20Documents/TechnicalDocs/CP2102-9.pdf" target="_blank">Link</a>
+| Regulator | TI | LM1117| SOT 223|<a href="http://www.ti.com/lit/ds/symlink/lm1117.pdf" target="_blank">Link</a>
+
+### Interfaces
+We have the following interfaces onboard the Knit -
+
+|Interface | Function | Connected to|Silkscreen Identifier|
+|:-:|:-:|:-:|:-:|
+|Button | Reset | RESET_N| RESET|
+|Button | Boot/User | GPIO16/27| BOOT|
+|LED | User | GPIO40|Blink!|
+|LED | Power | 3V3 rail|pwr|
+
+### Pin Headers
+We have the following pin headers onboard the Knit -
+
+| Pin count | Function |Silkscreen Identifier|
+|:-:|:-:|:-:|
+|16| GPIO breakout | \m/|
+|16| GPIO breakout | knit|
+|4 | Advanced debugging using [Serial Wire Debug](http://www.arm.com/products/system-ip/debug-trace/coresight-soc-components/serial-wire-debug.php)| SWD|
 
 Videos
 ===
