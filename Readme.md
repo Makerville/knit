@@ -62,6 +62,12 @@ Development tools
 All of these can be found on the bottom side of the module, which is visible on the Knit board.
 
 
+Featured In
+---
+- [Hackaday](http://hackaday.com/2016/04/05/makerville-knit-industrial-strength-wifi-breakout/)
+
+
+
 Documentation
 ====
 
