@@ -1,7 +1,7 @@
 Makerville Knit
 =======
 
-** The <strike>prototype</strike> production-ready WiFi board ! **
+**The <strike>prototype</strike> production-ready WiFi board !**
 
 
 [Pre Order >][preorder]
