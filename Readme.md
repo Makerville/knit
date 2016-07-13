@@ -1,6 +1,9 @@
 Makerville Knit
 =======
 
+**The <strike>prototype</strike> production-ready WiFi board !**
+
+
 [Pre Order >][preorder]
 
 Knit is an industrial grade WiFi development board to build secure applications. It is based on the <a href="http://www.marvell.com/microcontrollers/88MW300/302/" target="_blank">88MW300</a> SoC from Marvell.
