@@ -1132,16 +1132,16 @@
     )
   )
 
-  (module Capacitors_SMD:C_0805_HandSoldering (layer B.Cu) (tedit 572F26B5) (tstamp 5730421F)
+  (module Capacitors_SMD:C_0805_HandSoldering (layer B.Cu) (tedit 578614D3) (tstamp 5730421F)
     (at 163.75 96.25)
     (descr "Capacitor SMD 0805, hand soldering")
     (tags "capacitor 0805")
     (path /572F91F5)
     (attr smd)
-    (fp_text reference 0.1uF6 (at 0 2.1) (layer B.SilkS) hide
+    (fp_text reference C5 (at 0 2.1) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value C5 (at 0 -2.1) (layer B.Fab) hide
+    (fp_text value 0.1uF (at 0 -2.1) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -2.3 1) (end 2.3 1) (layer B.CrtYd) (width 0.05))
@@ -1294,13 +1294,13 @@
     )
   )
 
-  (module Capacitors_SMD:C_0805_HandSoldering (layer B.Cu) (tedit 577FE5FA) (tstamp 57305F6F)
+  (module Capacitors_SMD:C_0805_HandSoldering (layer B.Cu) (tedit 578614C0) (tstamp 57305F6F)
     (at 164 106)
     (descr "Capacitor SMD 0805, hand soldering")
     (tags "capacitor 0805")
     (path /56C9BA59)
     (attr smd)
-    (fp_text reference C5 (at 0 2.1) (layer B.SilkS) hide
+    (fp_text reference C9 (at 0 2.1) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text value 0.1uF (at 0 -2.1) (layer B.Fab)
