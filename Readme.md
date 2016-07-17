@@ -119,7 +119,7 @@ Pin Map
 
 
 |No|     Fn 0|         Fn 1      | Fn 2|        Fn 3|       Fn 4|       Fn 5|
-|:-:|:-:|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |6	|  TDO	    |  GPIO6    |  I2C1_SDA	|DIG_POR|    RC32M      |AUPLL_DIGTP0|
 |9 |  TDI	      |GPIO9	  |UART2_TXD   |SSP2_TXD   |I2C1_SDA   |AUPLL_DIGTP3|
 |10 |	TRST_N       |GPIO10|	 UART2_RXD   |SSP2_RXD  | I2C1_SCL|   PHY_MON0|
@@ -138,7 +138,7 @@ Pin Map
 |3V3|3V3|3V3|3V3|3V3|3V3|3V3|			
 
 |No|     Fn 0|         Fn 1      | Fn 2|        Fn 3|       Fn 4|       Fn 5|
-|:-:|:-:|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |4|     GPIO4	|GPT0_CH4|      I2C0_SDA|           AUDIO_CLK|	-|-|
 |5|     GPIO5	|GPT0_CH5 |     I2C0_SCL	|		-|-|-|
 |0   |  GPIO0|	GPT0_CH0|      UART0_CTSn  |       SSP0_CLK		|-|-|
@@ -206,7 +206,7 @@ Knit is licensed under the MIT License. You can find text of the license [here](
 The Knit board consists of the following major hardware components -
 
 | Function | Company | Part No| Package|Datasheet
-|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|:-:|
 | WiFi | Azurewave | AW-CU300 | 64 pin LGA|-|
 | Flash | Winbond | W25Q32 | SOIC-8| <a href="http://www.elinux.org/images/f/f5/Winbond-w25q32.pdf" target="_blank">Link</a>
 | USB to UART | Silicon Labs | CP2102| 28 pin QFN | <a href="https://www.silabs.com/Support%20Documents/TechnicalDocs/CP2102-9.pdf" target="_blank">Link</a>
