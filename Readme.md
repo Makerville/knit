@@ -158,7 +158,7 @@ Pin Map
 
 - Color coded pinmaps <br/>[Header 1 >](./support/header1.png) [Header 2 >](./support/header2.png)
 
-<img src="./img/bb.jpg" width="470"></img>
+<img src="https://makerville.io/knit/img/bb.jpg" width="470"></img>
 
 
 Power
@@ -239,7 +239,7 @@ The Azurewave module that is being used is certified as follows -
 - IC ID 6100A-CU300
 - NCC ID CCAI15LP1350T2
 
-<img src="./img/knit-module-bottom.jpg" width="470" ></img>
+<img src="https://makerville.io/knit/img/knit-module-bottom.jpg" width="470" ></img>
 
 
 ### Antenna
