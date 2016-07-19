@@ -325,6 +325,13 @@ FAQs
 - Where can I get more support ?
   - For SDK related issues, you can join the Gitter [chat](https://gitter.im/marvell-iot/aws_starter_sdk) or raise an [issue](https://github.com/marvell-iot/aws_starter_sdk/issues)
 
+
+Acknowledgements
+------------
+
+- PCB design by [Rohit Gupta](http://rohitg.in/about/)
+- Logo by [Cassie McKown](https://thenounproject.com/mckowncr/) under [CC by 3.0 US](http://creativecommons.org/licenses/by/3.0/us/)
+
 Projects we <3 & use
 ---
 
@@ -334,10 +341,6 @@ Projects we <3 & use
 - Eclipse C/C++ IDE
 - Flatdoc site generator by [Rico Sta. Cruz](http://ricostacruz.com/)
 
-Acknowledgements
-------------
-
-- Logo by [Cassie McKown](https://thenounproject.com/mckowncr/) under [CC by 3.0 US](http://creativecommons.org/licenses/by/3.0/us/)
 
 
 [project]: https://github.com/makerville/knit
