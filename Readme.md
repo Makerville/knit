@@ -4,7 +4,7 @@ Makerville Knit
 **The <strike>prototype</strike> production-ready WiFi board !**
 
 
-[Pre Order >][preorder]
+[ Buy Now >][order]
 
 Knit is an industrial grade WiFi development board to build secure applications. It is based on the <a href="http://www.marvell.com/microcontrollers/88MW300/302/" target="_blank">88MW300</a> SoC from Marvell.
 
@@ -319,7 +319,7 @@ FAQs
 - Is Knit OSHW (Open Source Hardware) ?
   - Yes, we have released the schematic and PCB files under the [MIT](https://github.com/Makerville/knit/blob/master/LICENSE) license. You can find the files [here](https://github.com/Makerville/knit/tree/master/hardware).
 - When will it be available ?
-  - You can preorder the Knit as part of our early access program. [Pre Order >][preorder]
+  - Knit is available now . [Buy Now >][order]
 - What will be the price?
   - For early access developers the price will be 999₹ / $14.99
 - Where can I get more support ?
@@ -344,7 +344,7 @@ Projects we <3 & use
 
 
 [project]: https://github.com/makerville/knit
-[preorder]: https://makerville.io/knit/early-access
+[order]: https://makerville.io/knit/early-access
 
 Get in touch
 ---
