@@ -309,13 +309,10 @@ FAQs
 ----
 - Is Knit OSHW (Open Source Hardware) ?
   - Yes, we have released the schematic and PCB files under the [MIT](https://github.com/Makerville/knit/blob/master/LICENSE) license. You can find the files [here](https://github.com/Makerville/knit/tree/master/hardware).
-- When will it be available ?
-  - Knit is available now . [Buy Now >][order]
-- What will be the price?
-  - For early access developers the price will be 999₹ / $14.99
 - Where can I get more support ?
-  - For SDK related issues, you can join the Gitter [chat](https://gitter.im/marvell-iot/aws_starter_sdk) or raise an [issue](https://github.com/marvell-iot/aws_starter_sdk/issues)
-
+  - For SDK related issues, you can join the Gitter [chat](https://gitter.im/marvell-iot/aws_starter_sdk) or raise an [issue](https://github.com/marvell-iot/ez-connect-lite/issues)
+- I have a prototype ! What should I do next ?
+  - Knit is designed so that you can go from a prototype to production. If you haven't already, check out the [hardware files](https://github.com/Makerville/knit). If you'd like to read more about how we made Knit and how you can make your own versions, go to our [production](./production/) page. 
 
 Acknowledgements
 ------------
