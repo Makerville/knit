@@ -1,5 +1,0 @@
-# to ignore all images in app 
-*.png
-*.jpg
-# except a particular one
-!mw300breakout.jpg
