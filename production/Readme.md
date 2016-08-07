@@ -28,7 +28,7 @@ Azurewave modules are easily available for prototyping. Check out [Arrow](https:
 ### Flash
 The CU300 module that we chose does not include an onboard flash which is required to store your code and files. Although Azurewave has another module, called CU300A, which has an onboard 2MB flash, we decided to go with this module so that we could have 4MB of onboard flash. This also makes it possible for someone to desolder the existing one and put in a bigger flash.
 
-<img src="../../img/flash.jpg" width="470"></img>
+<img src="../img/flash.jpg" width="470"></img>
 
 We are using the Winbond W25Q32 NOR flash. It is interfaced to the 88MW300 using the the QSPI interface. The pins used for interfacing this to the controller are not exposed on the pin headers, and hence are not part of the 25 GPIO pins.
 
