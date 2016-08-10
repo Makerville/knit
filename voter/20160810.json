@@ -1,0 +1,18 @@
+{
+	"item1.good": 1,
+	"item1.bad": 34,
+	"item1.ok": 42,
+	"item1.led": 0,
+	"item2.good": 14,
+	"item2.bad": 4,
+	"item2.ok": 24,
+	"item2.led": 2,
+	"item3.good": 24,
+	"item3.bad": 14,
+	"item3.ok": 14,
+	"item3.led": 0,
+	"item4.good": 34,
+	"item4.bad": 44,
+	"item4.ok": 14,
+	"item4.led": 1
+}
