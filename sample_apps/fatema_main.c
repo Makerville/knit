@@ -33,7 +33,7 @@ int main(void)
 
 	while (1) {
 		count++;
-		wmprintf("Fatema Hasta here : iteration %d\r\n", count);
+		wmprintf("Fatema Hasta : iteration %d\r\n", count);
 
 		/* Sleep  5 seconds */
 		os_thread_sleep(os_msec_to_ticks(5000));
