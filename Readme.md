@@ -3,30 +3,7 @@ Makerville Knit
 
 **The <strike>prototype</strike> production-ready WiFi board !**
 
-<table>		
-           <tr>		
-            <td>		
-            <p>For people in India</p>		
-            </td>		
-            <td>		
-            <a href="https://www.instamojo.com/makerville/knit-beta/" rel="im-checkout" data-behaviour="remote" data-style="dark" data-text="Buy" data-token="ed5a4059401167126952178eb636717a"></a>		
- <script src="https://d2xwmjc4uy2hr5.cloudfront.net/im-embed/im-embed.min.js"></script>		
- </td>		
- </tr>		
-         <tr>		
-           <td>		
-         <p>For people outside India</p></td>		
-         <td>		
-         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">		
- <input type="hidden" name="cmd" value="_s-xclick">		
- <input type="hidden" name="hosted_button_id" value="NE6DD2M32CYC8">		
- <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">		
- <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">		
- </form>		
-        </td>		
-      </tr>		
- 		
- </table>		
+	
  		
 
 Knit is an industrial grade WiFi development board to build secure applications. It is based on the <a href="http://www.marvell.com/microcontrollers/88MW300/302/" target="_blank">88MW300</a> SoC from Marvell.
